@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="index.js"></script>
+ 
+
   
   <title>Frontend Mentor | Advice generator app</title>
 
@@ -12,17 +16,15 @@
 <body> 
   <div class="container">
   <div class="card">
-  <div class="advice-id">
-  ADVICE #<!-- Advice ID goes here -->
+  <div id="advice-id">
   </div>
-  <div class="advice">
-  "Advice text goes here and is much longer, which will then push the text down more and more and more and more and more and kdljfadk djfadkfjal"
+  <div id="advice">
   </div>
   <div class="divider">
-  <svg width="444" height="16" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="hsl(193, 38%, 86%)" d="M0 8h196v1H0zM248 8h196v1H248z"/><g transform="translate(212)" fill="#CEE3E9"><rect width="6" height="16" rx="3"/><rect x="14" width="6" height="16" rx="3"/></g></g></svg>
+  <svg class="dice" width="444" height="16" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="hsl(193, 38%, 86%)" d="M0 8h196v1H0zM248 8h196v1H248z"/><g transform="translate(212)" fill="#CEE3E9"><rect width="6" height="16" rx="3"/><rect x="14" width="6" height="16" rx="3"/></g></g></svg>
 </div>
 </div>
-<button class="refresh-btn">
+<button class="refresh-btn" onclick="removeSpans()">
   <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z" fill="hsl(217, 19%, 24%)"/></svg>
   </button>
 </div>
@@ -30,6 +32,5 @@
     <p>Challenge by&nbsp<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by&nbsp<a href="https://josh-wilson6289.github.io/portfolio/">Josh Wilson</a>.</p>
   </footer>
-
 </body>
 </html>

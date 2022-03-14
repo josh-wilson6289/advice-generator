@@ -28,13 +28,13 @@ body {
   padding: 30px;
 }
 
-.advice-id {
+#advice-id {
   padding-bottom: 15px;
   color: hsl(150, 100%, 66%);
   max-width: 100%;
 }
 
-.advice {
+#advice {
   color: hsl(193, 38%, 86%);
   font-size: 28px;
   max-width: 100%;
